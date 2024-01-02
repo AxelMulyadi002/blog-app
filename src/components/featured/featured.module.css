@@ -47,3 +47,46 @@
 	border-radius: 5px;
 	width: max-content;
 }
+
+@media screen and (max-width: 1026px) {
+	.title {
+		font-size: 72px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.title {
+		font-size: 60px;
+	}
+	.postTitle {
+		font-size: 35px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.title {
+		font-size: 40px;
+	}
+	.imgContainer {
+		display: none;
+	}
+
+	.postTitle {
+		font-size: 30px;
+	}
+
+	.postDesc {
+		font-size: 15px;
+		font-weight: 200;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.title {
+		font-size: 30px;
+	}
+
+	.postTitle {
+		font-size: 25px;
+	}
+}

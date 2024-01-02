@@ -4,8 +4,8 @@ import Image from 'next/image';
 const Featured = () => {
 	return (
 		<div className={style.container}>
-			<h1 className={style.title}>
-				<b>Hey, Axel blog here! Discover my latest stories and my writing</b>
+			<h1 className={style.title} style={{ fontWeight: 100 }}>
+				<b>Hey, Axel blog here!</b> Discover my latest stories and my writing
 			</h1>
 			<div className={style.post}>
 				<div className={style.imgContainer}>
