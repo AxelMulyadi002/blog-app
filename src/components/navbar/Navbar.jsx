@@ -16,9 +16,15 @@ const Navbar = () => {
 			<div className={style.logo}>AxelBlog</div>
 			<div className={style.links}>
 				<ThemeToggle />
-				<Link href="/">Homepage</Link>
-				<Link href="/">Contact</Link>
-				<Link href="/">About</Link>
+				<Link href="/" className={style.link}>
+					Homepage
+				</Link>
+				<Link href="/" className={style.link}>
+					Contact
+				</Link>
+				<Link href="/" className={style.link}>
+					About
+				</Link>
 				<AuthLinks />
 			</div>
 		</div>
