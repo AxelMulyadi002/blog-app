@@ -1,20 +1,21 @@
 import React from 'react';
-import style from './menu.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import style from './editor.module.css';
 import { listData } from './listData';
-import EditorPick from '../editorPick/EditorPick';
-import CategoryTopic from '../categorySidebar/CategoryTopic';
 
-function Menu() {
+function EditorPick() {
 	return (
 		<div className={style.container}>
-			<h2 className={style.subtitle}>{"What's hot"}</h2>
-			<h1 className={style.title}>Most Popular</h1>
+			<h2 className={style.subtitle}>Chosen by the editor</h2>
+			<h1 className={style.title}>Editors Pick</h1>
 			<div className={style.items}>
 				{listData.map((data, index) => {
 					return (
 						<Link href="/" className={style.item} key={index}>
+							<div className={style.imgContainer}>
+								<Image src={data.image} alt="" fill className={style.image} />
+							</div>
 							<div className={style.textContainer}>
 								<span className={`${style.category} ${style[data.category]}`}>
 									{data.category}
@@ -29,10 +30,8 @@ function Menu() {
 					);
 				})}
 			</div>
-			<CategoryTopic />
-			<EditorPick />
 		</div>
 	);
 }
 
-export default Menu;
+export default EditorPick;

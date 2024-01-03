@@ -27,6 +27,18 @@
 	gap: 20px;
 }
 
+.imgContainer {
+	flex: 1;
+	position: relative;
+	aspect-ratio: 1/1;
+}
+
+.image {
+	border-radius: 50%;
+	border: 3px solid lightgray;
+	object-fit: cover;
+}
+
 .textContainer {
 	flex: 4;
 	display: flex;
