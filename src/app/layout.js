@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
 	title: 'Blog App',
-	description: 'Created by Next Js',
+	description: 'Created by Axel Mulyadi',
 };
 
 export default function RootLayout({ children }) {
